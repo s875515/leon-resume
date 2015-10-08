@@ -156,7 +156,7 @@ video {
   #page3 .browser__dot {
     background: #28ACE8; }
   #page3 .iphone-5s {
-    background-image: url(/pic/amd-mobile.png);
+    background-image: url(../../pic/amd-mobile.png);
     position: absolute;
     right: 20%;
     bottom: -20%; }
@@ -167,7 +167,7 @@ video {
     position: absolute;
     right: calc(50% + 200px);
     bottom: -15%;
-    background-image: url(/pic/shouapp/shouapp-1.png); }
+    background-image: url(../../pic/shouapp/shouapp-1.png); }
     @media screen and (max-width: 35.5em) {
       #page4 .iphone-5s:nth-child(2) {
         right: calc(50% + 50px); } }
@@ -175,7 +175,7 @@ video {
     position: absolute;
     right: calc(50% - 110px);
     bottom: -10%;
-    background-image: url(/pic/shouapp/shouapp-2.png); }
+    background-image: url(../../pic/shouapp/shouapp-2.png); }
     @media screen and (max-width: 35.5em) {
       #page4 .iphone-5s:nth-child(3) {
         right: calc(50% - 62px); } }
@@ -183,7 +183,7 @@ video {
     position: absolute;
     right: calc(50% - 400px);
     bottom: -15%;
-    background-image: url(/pic/shouapp/shouapp-3.png); }
+    background-image: url(../../pic/shouapp/shouapp-3.png); }
     @media screen and (max-width: 35.5em) {
       #page4 .iphone-5s:nth-child(4) {
         z-index: 1;
