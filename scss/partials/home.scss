@@ -266,4 +266,14 @@ $iphone-earphone-color: #5C5C5C;
       box-sizing: border-box;
     }
   }
+  .mobile-only {
+    @media screen and (min-width: 35.5em) {
+      display: none;
+    }
+  }
+  .desktop-only {
+    @media screen and (max-width: 35.5em) {
+      display: none;
+    }
+  }
 }

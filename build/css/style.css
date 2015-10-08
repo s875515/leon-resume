@@ -262,3 +262,9 @@ video {
     #page6 .skill-div div {
       padding: 1em;
       box-sizing: border-box; }
+  @media screen and (min-width: 35.5em) {
+    #page6 .mobile-only {
+      display: none; } }
+  @media screen and (max-width: 35.5em) {
+    #page6 .desktop-only {
+      display: none; } }
