@@ -19,6 +19,9 @@ svg text {
   text-anchor: middle; }
   svg text:last-child {
     font-size: 26em; }
+    @media screen and (max-width: 35.5em) {
+      svg text:last-child {
+        font-size: 15em; } }
 
 svg mask rect {
   fill: rgba(255, 255, 255, 0.9); }
@@ -54,6 +57,9 @@ video {
     font-size: 5em;
     letter-spacing: -4px;
     margin-bottom: 0.4em; }
+    @media screen and (max-width: 35.5em) {
+      .container h2 {
+        letter-spacing: -2px; } }
     .container h2 a {
       text-decoration: none;
       outline: 0;
@@ -65,11 +71,14 @@ video {
     font-weight: 100;
     letter-spacing: 0.1em;
     line-height: 1.8; }
+  @media screen and (max-width: 35.5em) {
+    .container {
+      width: 90%; } }
 
 .iphone-5s {
+  z-index: 10000;
   width: 30px;
   height: 30px;
-  background-image: url(/pic/amd-mobile.png);
   background-size: 100%;
   display: inline-block;
   width: 11.7em;
@@ -80,6 +89,9 @@ video {
   box-shadow: -2px -2px #A0A0A0, -17px -7px rgba(125, 125, 125, 0.37);
   margin-left: -5.85em;
   margin-top: 2em; }
+  @media screen and (max-width: 35.5em) {
+    .iphone-5s {
+      box-shadow: -2px -2px #A0A0A0, -8px -4px rgba(125, 125, 125, 0.37); } }
   .iphone-5s:before {
     content: "";
     width: 50px;
@@ -91,6 +103,10 @@ video {
     margin: 0 auto;
     border-radius: 10px;
     left: 69px; }
+    @media screen and (max-width: 35.5em) {
+      .iphone-5s:before {
+        top: -22px;
+        left: 30px; } }
   .iphone-5s:after {
     content: "";
     border-radius: 50%;
@@ -105,8 +121,12 @@ video {
   width: 80%;
   margin: auto;
   -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-iteration-count: infinite; }
+  -webkit-animation-delay: 2s; }
+  @media screen and (max-width: 35.5em) {
+    .page .work-view {
+      position: absolute;
+      width: 100%;
+      bottom: -1em; } }
 
 .page .img-div img {
   width: 100%; }
@@ -136,18 +156,52 @@ video {
   #page3 .browser__dot {
     background: #28ACE8; }
   #page3 .iphone-5s {
+    background-image: url(/pic/amd-mobile.png);
     position: absolute;
     right: 20%;
     bottom: -20%; }
 
 #page4 {
-  background: #E76AA3;
+  background: #E76AA3; }
+  #page4 .iphone-5s:nth-child(2) {
+    position: absolute;
+    right: calc(50% + 200px);
+    bottom: -15%;
+    background-image: url(/pic/shouapp/shouapp-1.png); }
+    @media screen and (max-width: 35.5em) {
+      #page4 .iphone-5s:nth-child(2) {
+        right: calc(50% + 50px); } }
+  #page4 .iphone-5s:nth-child(3) {
+    position: absolute;
+    right: calc(50% - 110px);
+    bottom: -10%;
+    background-image: url(/pic/shouapp/shouapp-2.png); }
+    @media screen and (max-width: 35.5em) {
+      #page4 .iphone-5s:nth-child(3) {
+        right: calc(50% - 62px); } }
+  #page4 .iphone-5s:nth-child(4) {
+    position: absolute;
+    right: calc(50% - 400px);
+    bottom: -15%;
+    background-image: url(/pic/shouapp/shouapp-3.png); }
+    @media screen and (max-width: 35.5em) {
+      #page4 .iphone-5s:nth-child(4) {
+        z-index: 1;
+        right: calc(50% - 176px); } }
+
+#page5 {
+  background: #CB7A5F; }
+  #page5 .browser__dot {
+    background: #CB7A5F; }
+
+#page6 {
+  background: #2E5367;
   color: #fff; }
-  #page4 .page4-container {
+  #page6 .page4-container {
     padding: 0 2em; }
-    #page4 .page4-container h3 span {
+    #page6 .page4-container h3 span {
       position: relative; }
-      #page4 .page4-container h3 span:after {
+      #page6 .page4-container h3 span:after {
         top: 7px;
         left: 7em;
         display: inline-block;
@@ -157,26 +211,26 @@ video {
         height: 2px;
         position: absolute;
         width: 80px; }
-  #page4 .aboutme-block {
+  #page6 .aboutme-block {
     box-sizing: border-box;
     padding: 1em; }
-  #page4 .aboutme-block {
+  #page6 .aboutme-block {
     display: inline-table; }
-  #page4 .left-block ul {
+  #page6 .left-block ul {
     margin-left: 0; }
-  #page4 .leon-img {
+  #page6 .leon-img {
     width: 90%; }
-  #page4 ul, #page4 li {
+  #page6 ul, #page6 li {
     font-size: small;
     font-weight: 100;
     list-style: none; }
-  #page4 h4:first-child, #page4 ul:first-child {
+  #page6 h4:first-child, #page6 ul:first-child {
     margin-top: 0; }
-  #page4 .my-skills {
+  #page6 .my-skills {
     text-align: center; }
-    #page4 .my-skills span {
+    #page6 .my-skills span {
       position: relative; }
-      #page4 .my-skills span:before {
+      #page6 .my-skills span:before {
         top: 7px;
         left: -5em;
         display: inline-block;
@@ -186,7 +240,7 @@ video {
         height: 2px;
         position: absolute;
         width: 80px; }
-      #page4 .my-skills span:after {
+      #page6 .my-skills span:after {
         top: 7px;
         right: -5em;
         display: inline-block;
@@ -196,12 +250,12 @@ video {
         height: 2px;
         position: absolute;
         width: 80px; }
-  #page4 .skill-div {
+  #page6 .skill-div {
     padding: 0 2em; }
-    #page4 .skill-div .icon {
+    #page6 .skill-div .icon {
       float: left; }
-      #page4 .skill-div .icon i {
+      #page6 .skill-div .icon i {
         font-size: 5em; }
-    #page4 .skill-div div {
+    #page6 .skill-div div {
       padding: 1em;
       box-sizing: border-box; }

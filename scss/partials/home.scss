@@ -12,6 +12,9 @@
     font-size: 5em;
     letter-spacing: -4px;
     margin-bottom: 0.4em;
+    @media screen and (max-width: 35.5em) {
+      letter-spacing: -2px;
+    }
     a {
       text-decoration: none;
       outline: 0;
@@ -26,6 +29,9 @@
     letter-spacing: 0.1em;
     line-height: 1.8;
   }
+  @media screen and (max-width: 35.5em) {
+    width: 90%;
+  }
 }
 
 $iphone-screen-color: #5C5C5C;
@@ -35,10 +41,9 @@ $iphone-perspective-visual-color: #A0A0A0;
 $iphone-earphone-color: #5C5C5C;
 
 .iphone-5s {
+  z-index: 10000;
   width: 30px;
   height: 30px;
-  // background: $iphone-screen-color;
-  background-image: url(/pic/amd-mobile.png);
   background-size: 100%;
   display: inline-block;
   width: 11.7em;
@@ -49,6 +54,9 @@ $iphone-earphone-color: #5C5C5C;
   box-shadow: -2px -2px #A0A0A0, -17px -7px rgba(125, 125, 125, 0.37);
   margin-left: -5.85em;
   margin-top: 2em;
+  @media screen and (max-width: 35.5em) {
+    box-shadow: -2px -2px #A0A0A0, -8px -4px rgba(125, 125, 125, 0.37);
+  }
   &:before {
     content: "";
     width: 50px;
@@ -60,6 +68,10 @@ $iphone-earphone-color: #5C5C5C;
     margin: 0 auto;
     border-radius: 10px;
     left: 69px;
+    @media screen and (max-width: 35.5em) {
+      top: -22px;
+      left: 30px;
+    }
   }
   &:after {
     content: "";
@@ -74,12 +86,18 @@ $iphone-earphone-color: #5C5C5C;
 }
 
 .page {
+  // height: 100% !;
   .work-view {
     width: 80%;
     margin: auto;
     -webkit-animation-duration: 3s;
     -webkit-animation-delay: 2s;
-    -webkit-animation-iteration-count: infinite;
+    @media screen and (max-width: 35.5em) {
+      position: absolute;
+      width: 100%;
+      // left: calc(50% - 144px);
+      bottom: -1em;
+    }
   }
   .img-div img {
     width: 100%;
@@ -114,6 +132,7 @@ $iphone-earphone-color: #5C5C5C;
     background: #28ACE8;
   }
   .iphone-5s {
+    background-image: url(/pic/amd-mobile.png);
     position: absolute;
     right: 20%;
     bottom: -20%;
@@ -122,6 +141,45 @@ $iphone-earphone-color: #5C5C5C;
 
 #page4 {
   background: #E76AA3;
+  .iphone-5s:nth-child(2) {
+    position: absolute;
+    right: calc(50% + 200px);
+    bottom: -15%;
+    background-image: url(/pic/shouapp/shouapp-1.png);
+    @media screen and (max-width: 35.5em) {
+      right: calc(50% + 50px);
+    }
+  }
+  .iphone-5s:nth-child(3) {
+    position: absolute;
+    right: calc(50% - 110px);
+    bottom: -10%;
+    background-image: url(/pic/shouapp/shouapp-2.png);
+    @media screen and (max-width: 35.5em) {
+      right: calc(50% - 62px);
+    }
+  }
+  .iphone-5s:nth-child(4) {
+    position: absolute;
+    right: calc(50% - 400px);
+    bottom: -15%;
+    background-image: url(/pic/shouapp/shouapp-3.png);
+    @media screen and (max-width: 35.5em) {
+      z-index: 1;
+      right: calc(50% - 176px);
+    }
+  }
+}
+
+#page5 {
+  background: #CB7A5F;
+  .browser__dot {
+    background: #CB7A5F;
+  }
+}
+
+#page6 {
+  background: #2E5367;
   color: #fff;
   .page4-container {
     padding: 0 2em;

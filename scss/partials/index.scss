@@ -19,6 +19,9 @@ svg text {
   text-anchor: middle;
   &:last-child {
     font-size: 26em;
+    @media screen and (max-width: 35.5em) {
+      font-size: 15em;
+    };
   }
 }
 svg mask rect {
