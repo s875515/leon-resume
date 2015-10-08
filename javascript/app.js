@@ -1,6 +1,6 @@
 // var myApp = angular.module('myApp',['br.fullpage']);
 
-var myApp = angular.module('myApp', ['ngRoute', 'br.fullpage'], function($routeProvider) {
+var myApp = angular.module('myApp', ['ngRoute', 'br.fullpage', 'ngAnimate'], function($routeProvider) {
 	$routeProvider.when('/home', {
 		controller: 'homeCtrl',
 	  templateUrl: 'views/home.html'
