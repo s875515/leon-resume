@@ -132,7 +132,7 @@ $iphone-earphone-color: #5C5C5C;
     background: #28ACE8;
   }
   .iphone-5s {
-    background-image: url(pic/amd-mobile.png);
+    background-image: url(/pic/amd-mobile.png);
     position: absolute;
     right: 20%;
     bottom: -20%;
@@ -145,7 +145,7 @@ $iphone-earphone-color: #5C5C5C;
     position: absolute;
     right: calc(50% + 200px);
     bottom: -15%;
-    background-image: url(pic/shouapp/shouapp-1.png);
+    background-image: url(/pic/shouapp/shouapp-1.png);
     @media screen and (max-width: 35.5em) {
       right: calc(50% + 50px);
     }
@@ -154,7 +154,7 @@ $iphone-earphone-color: #5C5C5C;
     position: absolute;
     right: calc(50% - 110px);
     bottom: -10%;
-    background-image: url(pic/shouapp/shouapp-2.png);
+    background-image: url(/pic/shouapp/shouapp-2.png);
     @media screen and (max-width: 35.5em) {
       right: calc(50% - 62px);
     }
