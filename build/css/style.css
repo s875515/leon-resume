@@ -1,0 +1,207 @@
+html {
+  height: 100%;
+  overflow: hidden;
+  font-weight: 100; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0; }
+
+svg {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+svg text {
+  font-size: 35em;
+  letter-spacing: -0.11em;
+  text-anchor: middle; }
+  svg text:last-child {
+    font-size: 26em; }
+
+svg mask rect {
+  fill: rgba(255, 255, 255, 0.9); }
+
+svg > rect {
+  fill: white;
+  -webkit-mask: url(#mask);
+  mask: url(#mask); }
+
+video {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  overflow: hidden; }
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 0.5em;
+    font-weight: 400; } }
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  text-align: center;
+  margin: auto; }
+  .container h2 {
+    font-weight: 700;
+    font-size: 5em;
+    letter-spacing: -4px;
+    margin-bottom: 0.4em; }
+    .container h2 a {
+      text-decoration: none;
+      outline: 0;
+      color: #fff; }
+  .container p {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    line-height: 1.8; }
+
+.iphone-5s {
+  width: 30px;
+  height: 30px;
+  background-image: url(/pic/amd-mobile.png);
+  background-size: 100%;
+  display: inline-block;
+  width: 11.7em;
+  height: 19.826em;
+  border-radius: 1.4018em;
+  border: 1px solid #252525;
+  border-width: 3.712em 0.9em;
+  box-shadow: -2px -2px #A0A0A0, -17px -7px rgba(125, 125, 125, 0.37);
+  margin-left: -5.85em;
+  margin-top: 2em; }
+  .iphone-5s:before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background: #5C5C5C;
+    position: absolute;
+    z-index: 99999;
+    top: -30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    left: 69px; }
+  .iphone-5s:after {
+    content: "";
+    border-radius: 50%;
+    bottom: -48px;
+    position: absolute;
+    border: 4px solid #D5D5D5;
+    width: 30px;
+    height: 30px;
+    left: 75px; }
+
+.page .work-view {
+  width: 80%;
+  margin: auto;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite; }
+
+.page .img-div img {
+  width: 100%; }
+
+.page .browser__panel {
+  padding: 8px;
+  background: #454545;
+  border-radius: 6px 6px 0 0; }
+
+.page .browser__dots {
+  overflow: hidden; }
+
+.page .browser__dot {
+  width: 6px;
+  height: 6px;
+  margin-right: 4px;
+  float: left;
+  border-radius: 50%; }
+
+#page2 {
+  background: #57ba54; }
+  #page2 .browser__dot {
+    background: #57ba54; }
+
+#page3 {
+  background: #28ACE8; }
+  #page3 .browser__dot {
+    background: #28ACE8; }
+  #page3 .iphone-5s {
+    position: absolute;
+    right: 20%;
+    bottom: -20%; }
+
+#page4 {
+  background: #E76AA3;
+  color: #fff; }
+  #page4 .page4-container {
+    padding: 0 2em; }
+    #page4 .page4-container h3 span {
+      position: relative; }
+      #page4 .page4-container h3 span:after {
+        top: 7px;
+        left: 7em;
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+        height: 2px;
+        position: absolute;
+        width: 80px; }
+  #page4 .aboutme-block {
+    box-sizing: border-box;
+    padding: 1em; }
+  #page4 .aboutme-block {
+    display: inline-table; }
+  #page4 .left-block ul {
+    margin-left: 0; }
+  #page4 .leon-img {
+    width: 90%; }
+  #page4 ul, #page4 li {
+    font-size: small;
+    font-weight: 100;
+    list-style: none; }
+  #page4 h4:first-child, #page4 ul:first-child {
+    margin-top: 0; }
+  #page4 .my-skills {
+    text-align: center; }
+    #page4 .my-skills span {
+      position: relative; }
+      #page4 .my-skills span:before {
+        top: 7px;
+        left: -5em;
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+        height: 2px;
+        position: absolute;
+        width: 80px; }
+      #page4 .my-skills span:after {
+        top: 7px;
+        right: -5em;
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+        height: 2px;
+        position: absolute;
+        width: 80px; }
+  #page4 .skill-div {
+    padding: 0 2em; }
+    #page4 .skill-div .icon {
+      float: left; }
+      #page4 .skill-div .icon i {
+        font-size: 5em; }
+    #page4 .skill-div div {
+      padding: 1em;
+      box-sizing: border-box; }

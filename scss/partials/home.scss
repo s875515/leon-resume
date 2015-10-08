@@ -1,0 +1,207 @@
+// .page {
+//   height: 600px;
+// }
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  h2 {
+    font-weight: 700;
+    font-size: 5em;
+    letter-spacing: -4px;
+    margin-bottom: 0.4em;
+    a {
+      text-decoration: none;
+      outline: 0;
+      color: #fff;
+    }
+  }
+  p {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+  }
+}
+
+$iphone-screen-color: #5C5C5C;
+$iphone-body-color: #252525;
+$iphone-home-button-color: #D5D5D5;
+$iphone-perspective-visual-color: #A0A0A0;
+$iphone-earphone-color: #5C5C5C;
+
+.iphone-5s {
+  width: 30px;
+  height: 30px;
+  // background: $iphone-screen-color;
+  background-image: url(/pic/amd-mobile.png);
+  background-size: 100%;
+  display: inline-block;
+  width: 11.7em;
+  height: 19.826em;
+  border-radius: 1.4018em;
+  border: 1px solid $iphone-body-color;
+  border-width: 3.712em .9em;
+  box-shadow: -2px -2px #A0A0A0, -17px -7px rgba(125, 125, 125, 0.37);
+  margin-left: -5.85em;
+  margin-top: 2em;
+  &:before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background: $iphone-earphone-color;
+    position: absolute;
+    z-index: 99999;
+    top: -30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    left: 69px;
+  }
+  &:after {
+    content: "";
+    border-radius: 50%;
+    bottom: -48px;
+    position: absolute;
+    border: 4px solid $iphone-home-button-color;
+    width: 30px;
+    height: 30px;
+    left: 75px;
+  }
+}
+
+.page {
+  .work-view {
+    width: 80%;
+    margin: auto;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+  .img-div img {
+    width: 100%;
+  }
+  .browser__panel {
+    padding: 8px;
+    background: #454545;
+    border-radius: 6px 6px 0 0;
+  }
+  .browser__dots {
+    overflow: hidden;
+  }
+  .browser__dot {
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+    float: left;
+    border-radius: 50%;
+  }
+}
+
+#page2 {
+  background: #57ba54;
+  .browser__dot {
+    background: #57ba54;
+  }
+}
+
+#page3 {
+  background: #28ACE8;
+  .browser__dot {
+    background: #28ACE8;
+  }
+  .iphone-5s {
+    position: absolute;
+    right: 20%;
+    bottom: -20%;
+  }
+}
+
+#page4 {
+  background: #E76AA3;
+  color: #fff;
+  .page4-container {
+    padding: 0 2em;
+    h3 span {
+      position: relative;
+      &:after {
+        top: 7px;
+        left: 7em;
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+        height: 2px;
+        position: absolute;
+        width: 80px;
+      }
+    }
+  }
+  .aboutme-block {
+    box-sizing: border-box;
+    padding: 1em;
+  }
+  .aboutme-block {
+    display: inline-table;
+  }
+  .left-block ul {
+    margin-left: 0;
+  }
+  .leon-img {
+    width: 90%;
+  }
+  ul, li {
+    font-size: small;
+    font-weight: 100;
+    list-style: none;
+  }
+  h4 , ul{
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .my-skills {
+    text-align: center;
+    span {
+      position: relative;
+      &:before {
+        top: 7px;
+        left: -5em;
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+        height: 2px;
+        position: absolute;
+        width: 80px;
+      }
+      &:after {
+        top: 7px;
+        right: -5em;
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+        height: 2px;
+        position: absolute;
+        width: 80px;
+      }
+    }
+  }
+  .skill-div {
+    padding: 0 2em;
+    .icon {
+      float: left;
+      i {
+        font-size: 5em;
+      }
+    }
+    div {
+      padding: 1em;
+      box-sizing: border-box;
+    }
+  }
+}
