@@ -75,9 +75,6 @@ video {
     .container {
       width: 90%; } }
 
-.bg {
-  background-image: url(http://alexgilev.com/video/video.jpg); }
-
 .iphone-5s {
   z-index: 10000;
   width: 30px;
@@ -148,6 +145,9 @@ video {
   margin-right: 4px;
   float: left;
   border-radius: 50%; }
+
+#page1 {
+  background-image: url(http://alexgilev.com/video/video.jpg); }
 
 #page2 {
   background: #57ba54; }
